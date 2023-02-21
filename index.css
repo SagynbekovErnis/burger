@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.list{
+    list-style: none;
+    display: flex;   
+    align-items: center;
+}
+li{
+    margin-right: 34px;
+}
+
+.img{
+    margin: 18px 777px 17px 40px;
+}
+.burger_list{
+    display: none;
+}
+.burger{
+    display: none;
+}
+.burger_line{
+    background: black;
+    width: 35px;
+    height: 4px;
+    border-radius: 20px;
+    margin-bottom: 7px;
+}
+.burger_close{
+    display: none;
+    font-size: 40px;
+    line-height: 0.5;
+    font-family: 'Fredoka One'
+}
+.burger_menu.active .burger_close{
+    display: flex;
+}
+.burger_menu.active .burger_line{
+    display: none;
+}
+.burger_menu.active ~ .burger_list{
+    display: none;
+}
+@media screen and (max-width:480px){
+    .li{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    header{
+        display: flex;
+    }
+    .img{
+        margin-right: 280px;
+    }
+    .burger_list{
+        list-style: none;
+        position: absolute;
+        bottom: 500px;
+        right: 180px;
+        display: block;
+        text-align: center;
+    }
+    .burger_menu{
+        margin-top: 25px;
+        margin-right: 30px;
+    }
+}
